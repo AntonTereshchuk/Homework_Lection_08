@@ -1,0 +1,96 @@
+@font-face {
+    font-family: JosefinSans;
+    src: url(fonts/JosefinSans.ttf);
+}
+
+html, body {
+    font-family: JosefinSans;
+    font-size: 18px;
+}
+
+.container {
+    width: 70%;
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-color-gray {
+    color: #828282;
+}
+
+.text-color-black {
+    color: #070707;
+}
+
+hr {
+    border: 1px solid;
+}
+
+.short-information {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.name {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.common {
+    align-self: flex-end;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+.language {
+    font-size: 0.9rem;
+    font-weight: 700;
+    transform: rotate(-90deg);
+    padding-top: 4.0rem;
+}
+
+.language:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.container img {
+   width: 100%;
+}
+
+@media screen and (max-width: 40rem) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .short-information {
+        flex-direction: column;
+    }
+
+    .common {
+        align-self: auto;
+    }
+
+    .language {
+        padding: 0;
+        margin-top: 2rem;
+    }
+}
